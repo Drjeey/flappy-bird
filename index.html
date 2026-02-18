@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flappy Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="flash-layer"></div>
+
+        <div id="ui-layer">
+            <div id="score-board">
+                <div id="score">0</div>
+                <div id="best-score-display">BEST: <span id="high-score">0</span></div>
+            </div>
+            
+            <div id="start-screen">
+                <div class="logo">FLAPPY PRO</div>
+                <p>Tap to Flap</p>
+            </div>
+            
+            <div id="game-over-screen" class="hidden">
+                <h1>GAME OVER</h1>
+                <div class="medal-panel">
+                    <div class="score-box">
+                        <p>SCORE</p>
+                        <span id="final-score">0</span>
+                    </div>
+                    <div class="score-box">
+                        <p>BEST</p>
+                        <span id="final-best">0</span>
+                    </div>
+                </div>
+                <button id="restart-btn">PLAY AGAIN</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgm" src="bgm.mp3" loop preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
